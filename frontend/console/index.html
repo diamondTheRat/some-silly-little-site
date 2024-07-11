@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>console</title>
+  <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'> 
+  <link rel="stylesheet" href="frontend/console/index.css">
+</head>
+<body class="console-background">
+  <div class="console-container console-text" id="console-container">
+    
+  </div>
+  </textarea>
+
+  <div class="console-text">
+    <span id="cwd" class="text-path">~ ></span>
+    <input type="text"  id="console-input" class="console-input console-text text-ok" onkeypress="enteredCommand(event, this)" autofocus onblur="this.focus()">
+  </div>
+  <script src="frontend/console/index.js"></script>
+</body>
+</html>

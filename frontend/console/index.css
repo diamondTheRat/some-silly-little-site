@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Rounded;
+    src: url(/frontend/PitagonSansMono-Medium.ttf);
+}
+
+.console-background {
+    background-color: rgb(0, 0, 10);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.console-input::selection {
+    border-width: 0;
+}
+
+.console-input {
+    padding: 0;
+}
+
+.console-container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-path {
+    color: rgb(0, 255, 0);
+}
+
+.input-container {
+    display: flexbox;
+    flex-direction: row;
+}
+
+.text-ok {
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+}
+
+.text-error {
+    color: rgb(255, 0, 0);
+}
+
+.console-text {
+    color: rgb(255, 255, 255);
+    font-family: Rounded;
+    background: none;
+    border: none;   
+    outline: none;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="/frontend/login/index.css">
+</head>
+<body>
+  <div class="flex-box flex-center fill-screen">
+    <div class="flex-box flex-column login-container flex-justify-center gap-15" id="login">
+      <div class="flex-box flex-center flex-grow-1 flex-column">
+        <h1 class="text-white no-margin">Login</h1>
+        <span class="text-centered text-bright-gray text-bold">can't have random people messing with my server</span>
+      </div>
+      <span class="text-red text-bold small-gap text-small" id="wrong-password"></span>
+      <input type="password" class="text-big no-background text-bold text-white background-gray background-rounded flex-grow-1 text-centered" id="password" placeholder="Password">
+      <button onclick="login()" class="text-big text-bold text-white no-background background-green background-rounded flex-grow-1">Login</button>
+    </div>
+  </div>
+  <script src="/frontend/login/index.js"></script>
+</body>
+</html>

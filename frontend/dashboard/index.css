@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Rounded;
+    src: url(/frontend/PitagonSansMono-Medium.ttf);
+}
+
+body {
+    background-color: rgb(0, 0, 10);
+    margin: 0;
+    font-family: Rounded;
+}
+
+
+.flex-box {
+    display: flex;
+}
+
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-warp {
+    flex-wrap: wrap;
+}
+
+.flex-noward {
+    flex-wrap: nowrap;
+}
+
+.flex-spaced {
+    justify-content: space-around;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container :not(:first-child) {
+    margin-left: 10px;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.width-flush {
+    width: 100%;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.text-big {
+    font-size: 20px;
+}
+
+.text-blue {
+    color: rgb(50, 100, 205);
+}
+
+.text-gray {
+    color: rgb(34, 34, 34);
+}
+
+.text-white {
+    color: rgb(255, 255, 255);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.text-green {
+    color: rgb(0, 255, 0);
+}
+
+.fill-screen {
+    min-height: 100vh;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    background: rgb(34, 34, 34);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.projects-container {
+    padding: 10px 0 10px 0;
+    gap: 15px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.background-gear {
+    background-image: url(https://www.svgrepo.com/show/17716/gear.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-container {
+    padding: 0px 10px 0px 10px;
+}
+
+.card h1 {
+    font-size: 3rem;
+    color: rgb(50, 55, 60);
+}
+
+.status-info-thingy :not(:first-child) {
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card h1 {
+        font-size: 4rem;
+    }
+
+    body { 
+        font-size: 15px;
+    }
+    
+    .info-container:last-child {
+        margin: 0;
+    }
+}

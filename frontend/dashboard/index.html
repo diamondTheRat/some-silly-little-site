@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="stylesheet" href="/frontend/dashboard/index.css">
+</head>
+<body>
+  <div class="flex-box flex-center fill-screen menu-container">
+    <div class="flex-box flex-nowarp flex-column flex-align-center">
+      <div class="flex-box flex-nowarp flex-column width-flush">
+        <h1 class="no-margin text-white">
+          Welcome, <span class="text-blue text-bold">dia!</span>
+        </h1>
+        <div class="flex-box flex-warp flex-row info-container flex-align-center" id="status-info-container">
+          <span class="text-green text-big text-bold">Connected: Raspberry Pi 5 ></span>
+          <div class="flex-box flex-spaced flex-nowarp flex-row status-info-thingy ">
+            <span class="text-gray text-bold" id="cpu">cpu ???</span>
+            <span class="text-gray text-bold" id="free-ram">free ram ???</span>
+            <span class="text-gray text-bold" id="used-ram">used ram ???</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="flex-box flex-warp flex-row projects-container flex-justify-center">
+        <a href="console" class="card flex-box flex-center">
+          <h1>Console</h1>
+        </a>
+        <a href="tasks" class="card  flex-box flex-center">
+          <h1>Tasks</h1>
+        </a>
+        <a href="other" class="card  flex-box flex-center">
+          <h1>Other</h1>
+        </a>
+      </nav>
+    </div>
+  </div>
+  <script src="/frontend/dashboard/index.js"></script>
+</body>
+</html>
